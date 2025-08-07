@@ -1,0 +1,47 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="growth-experiment-framework",
+    version="1.0.0",
+    description="Scientific A/B testing & conversion optimization for sustainable business growth",
+    author="Growth Team",
+    packages=find_packages(),
+    install_requires=[
+        "numpy>=1.24.3",
+        "pandas>=2.0.3",
+        "scipy>=1.11.1",
+        "scikit-learn>=1.3.0",
+        "statsmodels>=0.14.0",
+        "matplotlib>=3.7.2",
+        "seaborn>=0.12.2",
+        "plotly>=5.15.0",
+        "dash>=2.13.0",
+        "dash-bootstrap-components>=1.4.2",
+        "fastapi>=0.100.1",
+        "uvicorn>=0.23.2",
+        "pydantic>=2.1.1",
+        "sqlalchemy>=2.0.19",
+        "redis>=4.6.0",
+        "celery>=5.3.1",
+    ],
+    extras_require={
+        "dev": [
+            "pytest>=7.4.0",
+            "pytest-cov>=4.1.0",
+            "black>=23.7.0",
+            "flake8>=6.0.0",
+            "mypy>=1.5.1",
+            "jupyter>=1.0.0",
+            "notebook>=7.0.2",
+        ]
+    },
+    python_requires=">=3.9",
+    classifiers=[
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+    ],
+)
